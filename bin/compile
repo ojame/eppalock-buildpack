@@ -1,2 +1,5 @@
-#!/bin/sh
-echo "eppalock buildpack"
+#!/usr/bin/env bash
+# bin/compile <build-dir>
+
+echo 'eppalock-buildpack-compile'
+exit 0
