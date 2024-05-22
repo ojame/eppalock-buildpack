@@ -3,5 +3,7 @@
 
 echo 'eppalock-buildpack-compile'
 echo "$PORT"
+echo env
+echo "dog"
 # socat TCP4-LISTEN:8080,fork EXEC:/usr/local/bin/bashttpd
 exit 0
