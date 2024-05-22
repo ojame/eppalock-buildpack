@@ -6,5 +6,8 @@ echo "$PORT"
 echo env
 echo "dog"
 cat "$ENV_DIR/PORT"
+
+cp "$BUILDPACK_DIR/extra/eppalock.sh" "$BUILD_DIR/.profile.d/"
+
 # socat TCP4-LISTEN:8080,fork EXEC:/usr/local/bin/bashttpd
 exit 0
