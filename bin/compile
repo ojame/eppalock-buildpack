@@ -7,7 +7,14 @@ echo env
 echo "dog"
 cat "$ENV_DIR/PORT"
 
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+BUILDPACK_DIR=$(cd "$(dirname "$0")"; cd ..; pwd)
+
+mkdir -p "$BUILD_DIR/.profile.d"
 cp "$BUILDPACK_DIR/extra/eppalock.sh" "$BUILD_DIR/.profile.d/"
+chmod +x "$BUILD_DIR/.profile.d/eppalock.sh"
 
 # socat TCP4-LISTEN:8080,fork EXEC:/usr/local/bin/bashttpd
 exit 0
