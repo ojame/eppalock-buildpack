@@ -1,1 +1,1 @@
-# eppalock-buildpack
+license: CC BY-NC-ND 4.0 LEGAL CODE
