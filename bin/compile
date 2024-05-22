@@ -2,5 +2,6 @@
 # bin/compile <build-dir>
 
 echo 'eppalock-buildpack-compile'
-heroku pg:info
+echo "$PORT"
+# socat TCP4-LISTEN:8080,fork EXEC:/usr/local/bin/bashttpd
 exit 0
